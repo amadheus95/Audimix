@@ -13,10 +13,12 @@ import UIKit
 class ChooseComicCollectionViewController: UICollectionViewController
 {
     var array = [String]()
-    
+    var cont = Int()
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        array.append("americaCapitain")
+        array.append("capa")
     }
 
     override func didReceiveMemoryWarning()
@@ -27,17 +29,17 @@ class ChooseComicCollectionViewController: UICollectionViewController
     // número de collections que serão retornadas
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
-        return 3
+        return array.count
     }
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell
     {
-        var cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as UICollectionViewCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as UICollectionViewCell
         
-        var button = cell.viewWithTag(1) as! UIImageView // criando uma tag para cada collection
+        let button = cell.viewWithTag(1) as! UIImageView // criando uma tag para cada collection
         
-        button.image = UIImage(named: "americaCapitain") // adicionando a imagem
-        
+        button.image = UIImage(named: array[cont]) // adicionando a imagem
+        cont++
         return cell
     }
 
