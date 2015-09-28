@@ -42,5 +42,10 @@ class ChooseComicCollectionViewController: UICollectionViewController
         cont++
         return cell
     }
+    
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath)
+    {
+        print("\(indexPath.row)")
+    }
 
 }
