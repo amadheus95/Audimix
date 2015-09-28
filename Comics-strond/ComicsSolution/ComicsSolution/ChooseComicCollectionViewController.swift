@@ -32,13 +32,20 @@ class ChooseComicCollectionViewController: UICollectionViewController
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell
     {
-        var cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as UICollectionViewCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as UICollectionViewCell // identificador para a célula
         
-        var button = cell.viewWithTag(1) as! UIImageView // criando uma tag para cada collection
+        let button = cell.viewWithTag(1) as! UIImageView // criando uma tag para cada collection
         
         button.image = UIImage(named: "americaCapitain") // adicionando a imagem
         
+        print(indexPath.row)
+        
         return cell
+    }
+    
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath)
+    {
+        print("\(indexPath.row)")
     }
 
 }
