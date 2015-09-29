@@ -20,7 +20,7 @@ class ViewController: UIViewController
     var audioPlayer2 = AVAudioPlayer()
     var audioPlayer3 = AVAudioPlayer()
     
-    
+    var index = Int()
     var sound = Sound()
     var swipe = loadSwipe()
     var cont = Int()
@@ -42,6 +42,7 @@ class ViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        print("jhsasssssssssssssssssssssssss-----------\(index)")
         swipe.loadSwipe(self.view!,ob: self)
         loadTapGesture()
         instaceAllComics = AllComics()

@@ -8,7 +8,7 @@
 
 import UIKit
 
-
+var index = Int()
 
 class ChooseComicCollectionViewController: UICollectionViewController
 {
@@ -45,7 +45,27 @@ class ChooseComicCollectionViewController: UICollectionViewController
     
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath)
     {
-        print("\(indexPath.row)")
+        
+//        let viewController = self.storyboard?.instantiateViewControllerWithIdentifier("leitor") as? ViewController
+//        
+//        self.navigationController?.pushViewController(viewController!, animated: true)
+        index = indexPath.row
+        self.performSegueWithIdentifier("vai", sender: self)
+        print("opa\(indexPath.row)")
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue?, sender: AnyObject?) {
+        
+            if segue!.identifier == "vai" {
+                
+                let viewController:ViewController = segue!.destinationViewController as! ViewController
+                print("testando o index\(index)")
+                viewController.index = index
+            
+                
+        }
+    }
+    
+    
 
 }
