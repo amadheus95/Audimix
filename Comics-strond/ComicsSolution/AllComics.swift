@@ -19,11 +19,11 @@ class AllComics {
         cont = 0
         Index=index
         switch index{
+        case 0:
+            vetorComic = ["DM03","DM04"]
+            return vetorComic
         case 1:
             vetorComic = ["SnS1","SnS2","SnS3","SnS4","SnS5","SnS6"]
-            return vetorComic
-        case 2:
-            vetorComic = ["DM03","DM04"]
             return vetorComic
         default:
             vetorComic = ["HQNaoEncontrada"]
@@ -33,8 +33,11 @@ class AllComics {
     
     func vetorAudio(Index: Int) -> [String]{
         switch Index{
-        case 2:
+        case 0:
             vetorSound = ["dinastia-p2-q1","dinastia-p2-q2"]
+            return vetorSound
+        case 1:
+            vetorSound = ["dinastia-p2-q1","dinastia-p2-q2","dinastia-p2-q2","dinastia-p2-q2","dinastia-p2-q2","dinastia-p2-q2"]
             return vetorSound
         default:
             vetorSound = ["HQNaoEncontrada"]
@@ -44,9 +47,13 @@ class AllComics {
     
     func vetorFala(Index: Int) -> [String]{
         switch Index{
-        case 2:
+        case 0:
             vetorFala = ["Estranho", "audio-p2-q2"]
             return vetorFala
+        case 1:
+            vetorFala = ["dinastia-p2-q1","dinastia-p2-q2","dinastia-p2-q2","dinastia-p2-q2","dinastia-p2-q2","dinastia-p2-q2"]
+            return vetorFala
+
         default:
             vetorFala = ["HQNaoEncontrada"]
             return vetorFala

@@ -62,7 +62,7 @@
 		79258C4A1BA08A9900AEBC7C /* Sounds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
 		7960D0401BA6F54800D3665E /* ChooseComicCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseComicCollectionViewController.swift; sourceTree = "<group>"; };
 		A70D93811B9F6365008B19D0 /* Pagina 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Pagina 1.mp3"; sourceTree = "<group>"; };
-		A71C14231BA21EA800EB3BEE /* loadSwipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = loadSwipe.swift; path = ComicsSolution/loadSwipe.swift; sourceTree = "<group>"; };
+		A71C14231BA21EA800EB3BEE /* loadSwipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loadSwipe.swift; sourceTree = "<group>"; };
 		A74EE8151BA3293D007CFE8B /* dinastia-p2-q1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "dinastia-p2-q1.mp3"; sourceTree = "<group>"; };
 		A74EE8161BA3293D007CFE8B /* dinastia-p2-q2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "dinastia-p2-q2.mp3"; sourceTree = "<group>"; };
 		A754A2731BAAF17B0056AD6E /* audio-p2-q2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "audio-p2-q2.mp3"; sourceTree = "<group>"; };
@@ -110,7 +110,6 @@
 				79258C301B9F32A100AEBC7C /* ComicsSolutionTests */,
 				79258C3B1B9F32A100AEBC7C /* ComicsSolutionUITests */,
 				79258C171B9F32A000AEBC7C /* Products */,
-				A71C14231BA21EA800EB3BEE /* loadSwipe.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,6 +175,7 @@
 		79258C4E1BA08B0100AEBC7C /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				A71C14231BA21EA800EB3BEE /* loadSwipe.swift */,
 				5E1B95A41BA6FAF500E6C055 /* AllComics.swift */,
 				79258C4A1BA08A9900AEBC7C /* Sounds.swift */,
 				79258C191B9F32A000AEBC7C /* AppDelegate.swift */,

@@ -45,10 +45,7 @@ class ChooseComicCollectionViewController: UICollectionViewController
     
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath)
     {
-        
-//        let viewController = self.storyboard?.instantiateViewControllerWithIdentifier("leitor") as? ViewController
-//        
-//        self.navigationController?.pushViewController(viewController!, animated: true)
+
         index = indexPath.row
         self.performSegueWithIdentifier("vai", sender: self)
         print("opa\(indexPath.row)")

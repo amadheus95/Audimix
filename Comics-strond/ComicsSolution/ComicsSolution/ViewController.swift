@@ -42,13 +42,12 @@ class ViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        print("jhsasssssssssssssssssssssssss-----------\(index)")
         swipe.loadSwipe(self.view!,ob: self)
         loadTapGesture()
         instaceAllComics = AllComics()
-        vetorStrings = instaceAllComics!.vetorComics(2) // Pegar INDEX AQUI!!!!
-        vetorStringAudio = instaceAllComics!.vetorAudio(2) // Pegar INDEX AQUI!!!!
-        vetorStringFala = instaceAllComics!.vetorFala(2)  //Pegar INDEX AQUI!!!!
+        vetorStrings = instaceAllComics!.vetorComics(index) // Pegar INDEX AQUI!!!!
+        vetorStringAudio = instaceAllComics!.vetorAudio(index) // Pegar INDEX AQUI!!!!
+        vetorStringFala = instaceAllComics!.vetorFala(index)  //Pegar INDEX AQUI!!!!
         
         audioPlayer2 = sound.setupAudioPlayerWithFile(vetorStringAudio[0])
         audioPlayer3 = sound.setupAudioPlayerWithFile(vetorStringFala[0])
