@@ -110,7 +110,7 @@ class ViewController: UIViewController
             //let Touch = gesture.locationOfTouch(1, inView: scrollView)
             //print(Touch.x);
             //print(Touch.y);
-            self.scrollView.zoomToRect(CGRect(x: gesture.locationOfTouch(0, inView: scrollView.viewForBaselineLayout()).x, y: gesture.locationOfTouch(0, inView: scrollView.viewForBaselineLayout()).y, width: 2, height: 2), animated: true)
+            self.scrollView.zoomToRect(CGRect(x: gesture.locationOfTouch(0, inView: scrollView.viewForFirstBaselineLayout).x, y: gesture.locationOfTouch(0, inView: scrollView.viewForFirstBaselineLayout).y, width: 2, height: 2), animated: true)
             print(scrollView.zoomScale)
             doubleTap = true;
             print(location);
