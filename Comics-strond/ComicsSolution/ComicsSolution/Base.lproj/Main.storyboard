@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cSe-lB-LuS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9052" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cSe-lB-LuS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9040"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -22,6 +22,7 @@
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gip-rK-yLG">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="509"/>
+                                        <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oFh-3S-2zt">
@@ -29,9 +30,11 @@
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="commands_bg" translatesAutoresizingMaskIntoConstraints="NO" id="HRw-iK-Zxg">
                                                 <rect key="frame" x="0.0" y="21" width="86" height="270"/>
+                                                <animations/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gk9-3i-ZPZ">
                                                 <rect key="frame" x="1" y="209" width="66" height="66"/>
+                                                <animations/>
                                                 <accessibility key="accessibilityConfiguration" label="repetir"/>
                                                 <state key="normal" image="repete"/>
                                                 <connections>
@@ -40,6 +43,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2w-Mt-nxl">
                                                 <rect key="frame" x="1" y="123" width="66" height="66"/>
+                                                <animations/>
                                                 <accessibility key="accessibilityConfiguration" label="fala"/>
                                                 <state key="normal" image="fala"/>
                                                 <connections>
@@ -48,6 +52,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yps-1m-OIA">
                                                 <rect key="frame" x="1" y="39" width="66" height="67"/>
+                                                <animations/>
                                                 <accessibility key="accessibilityConfiguration" label="descrição"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="67" id="EUV-oR-DMm"/>
@@ -58,6 +63,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="Gk9-3i-ZPZ" firstAttribute="top" secondItem="f2w-Mt-nxl" secondAttribute="bottom" constant="20" id="1PE-Dv-TuQ"/>
@@ -75,6 +81,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="oFh-3S-2zt" firstAttribute="leading" secondItem="Gip-rK-yLG" secondAttribute="leading" id="Df4-pa-7q4"/>
@@ -92,6 +99,7 @@
                             </scrollView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ePY-VA-vpP">
                                 <rect key="frame" x="0.0" y="19" width="375" height="44"/>
+                                <animations/>
                                 <color key="barTintColor" red="0.68235294120000001" green="0.68235294120000001" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="Title" id="jrH-dj-2w3">
@@ -106,6 +114,7 @@
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8DA-67-S51">
                                 <rect key="frame" x="20" y="617" width="56" height="30"/>
+                                <animations/>
                                 <state key="normal" title="Anterior"/>
                                 <connections>
                                     <action selector="previous:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f9d-Sg-V3J"/>
@@ -113,12 +122,14 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBa-Gu-2qQ">
                                 <rect key="frame" x="263" y="617" width="92" height="30"/>
+                                <animations/>
                                 <state key="normal" title="Próximo"/>
                                 <connections>
                                     <action selector="next:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UV6-4n-gKb"/>
                                 </connections>
                             </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="i7T-ow-jYI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="43" id="L5z-KQ-E1e"/>
@@ -148,6 +159,7 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="H9y-km-u2q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bOl-Gj-SBo">
                             <size key="itemSize" width="153" height="221"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -164,10 +176,13 @@
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rgg-fh-Wck">
                                             <rect key="frame" x="1" y="0.0" width="151" height="221"/>
+                                            <animations/>
                                         </imageView>
                                     </subviews>
+                                    <animations/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <animations/>
                                 <constraints>
                                     <constraint firstItem="Rgg-fh-Wck" firstAttribute="leading" secondItem="b21-oj-DSS" secondAttribute="leading" constant="1" id="6BI-gN-dKp"/>
                                     <constraint firstAttribute="bottom" secondItem="Rgg-fh-Wck" secondAttribute="bottom" id="IVq-AT-4mN"/>
@@ -201,6 +216,7 @@
                     <view key="view" contentMode="scaleToFill" id="Sy4-PD-4sY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Configurações" id="aPy-Kv-Fvp"/>
@@ -221,6 +237,7 @@
                     <view key="view" contentMode="scaleToFill" id="Rft-Xw-K0Z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Loja" id="M8j-aU-URF"/>
@@ -237,6 +254,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="HV1-1o-Io4">
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
@@ -258,6 +276,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="iy6-Va-dc6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.68235294117647061" green="0.68235294117647061" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
