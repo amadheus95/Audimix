@@ -18,6 +18,7 @@ class ChooseComicCollectionViewController: UICollectionViewController
         super.viewDidLoad()
         array.append("americaCapitain")
         array.append("capa")
+        array.append("angus")
     }
 
     override func didReceiveMemoryWarning()

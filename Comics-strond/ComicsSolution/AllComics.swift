@@ -25,6 +25,9 @@ class AllComics {
         case 1:
             vetorComic = ["SnS1","SnS2","SnS3","SnS4","SnS5","SnS6"]
             return vetorComic
+        case 2:
+            vetorComic = ["angus1","angus2","angus3","angus4","angus5","angus6","angus7","angusFim"]
+            return vetorComic
         default:
             vetorComic = ["HQNaoEncontrada"]
             return vetorComic
@@ -38,6 +41,9 @@ class AllComics {
             return vetorSound
         case 1:
             vetorSound = ["dinastia-p2-q1","dinastia-p2-q2","dinastia-p2-q2","dinastia-p2-q2","dinastia-p2-q2","dinastia-p2-q2"]
+            return vetorSound
+        case 2:
+            vetorSound = ["dinastia-p2-q1","dinastia-p2-q2","dinastia-p2-q2","dinastia-p2-q2","dinastia-p2-q2","dinastia-p2-q2","dinastia-p2-q2","dinastia-p2-q2"]
             return vetorSound
         default:
             vetorSound = ["HQNaoEncontrada"]
@@ -53,7 +59,9 @@ class AllComics {
         case 1:
             vetorFala = ["dinastia-p2-q1","dinastia-p2-q2","dinastia-p2-q2","dinastia-p2-q2","dinastia-p2-q2","dinastia-p2-q2"]
             return vetorFala
-
+        case 2:
+            vetorFala = ["dinastia-p2-q1","dinastia-p2-q2","dinastia-p2-q2","dinastia-p2-q2","dinastia-p2-q2","dinastia-p2-q2","dinastia-p2-q2","dinastia-p2-q2"]
+            return vetorFala
         default:
             vetorFala = ["HQNaoEncontrada"]
             return vetorFala
