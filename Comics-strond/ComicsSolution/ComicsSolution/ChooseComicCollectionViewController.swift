@@ -13,6 +13,7 @@ var index = Int()
 class ChooseComicCollectionViewController: UICollectionViewController
 {
     var array = [String]()
+    var titulos = ["Capitão América", "Shokugeki no Soma", "Angus o vilão"]
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -37,8 +38,11 @@ class ChooseComicCollectionViewController: UICollectionViewController
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as UICollectionViewCell
         
         let button = cell.viewWithTag(1) as! UIImageView // criando uma tag para cada collection
+        let button2 = cell.viewWithTag(2) as! UILabel
         
         button.image = UIImage(named: array[indexPath.row]) // adicionando a imagem
+        button2.text = titulos[indexPath.row]
+        
         return cell
     }
     

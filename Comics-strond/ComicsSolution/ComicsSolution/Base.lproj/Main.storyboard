@@ -172,9 +172,16 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rgg-fh-Wck">
-                                            <rect key="frame" x="1" y="0.0" width="151" height="221"/>
+                                            <rect key="frame" x="1" y="0.0" width="151" height="188"/>
                                             <animations/>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ui7-vK-obr">
+                                            <rect key="frame" x="0.0" y="187" width="152" height="21"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <animations/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -182,8 +189,11 @@
                                 <animations/>
                                 <constraints>
                                     <constraint firstItem="Rgg-fh-Wck" firstAttribute="leading" secondItem="b21-oj-DSS" secondAttribute="leading" constant="1" id="6BI-gN-dKp"/>
-                                    <constraint firstAttribute="bottom" secondItem="Rgg-fh-Wck" secondAttribute="bottom" id="IVq-AT-4mN"/>
+                                    <constraint firstItem="ui7-vK-obr" firstAttribute="leading" secondItem="b21-oj-DSS" secondAttribute="leadingMargin" constant="-8" id="Cgb-FZ-IV9"/>
+                                    <constraint firstAttribute="bottom" secondItem="Rgg-fh-Wck" secondAttribute="bottom" constant="33" id="IVq-AT-4mN"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="ui7-vK-obr" secondAttribute="trailing" constant="-7" id="QpN-Oc-VJB"/>
                                     <constraint firstAttribute="trailing" secondItem="Rgg-fh-Wck" secondAttribute="trailing" constant="1" id="djt-bt-LYK"/>
+                                    <constraint firstItem="ui7-vK-obr" firstAttribute="top" secondItem="b21-oj-DSS" secondAttribute="topMargin" constant="179" id="olt-89-Cdv"/>
                                     <constraint firstItem="Rgg-fh-Wck" firstAttribute="top" secondItem="b21-oj-DSS" secondAttribute="top" id="qGa-im-YqZ"/>
                                 </constraints>
                             </collectionViewCell>
