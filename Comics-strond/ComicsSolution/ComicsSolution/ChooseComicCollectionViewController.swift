@@ -13,12 +13,16 @@ var index = Int()
 class ChooseComicCollectionViewController: UICollectionViewController
 {
     var array = [String]()
-    var titulos = ["Capitão América", "Shokugeki no Soma", "Angus o vilão"]
+    var titulos = ["Capitão América", "Shokugeki no Soma", "Angus o vilão", "Angus o vilão", "Angus o vilão", "Angus o vilão", "Angus o vilão"]
     override func viewDidLoad()
     {
         super.viewDidLoad()
         array.append("americaCapitain")
         array.append("capa")
+        array.append("angus")
+        array.append("angus")
+        array.append("angus")
+        array.append("angus")
         array.append("angus")
     }
 
