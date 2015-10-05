@@ -108,7 +108,11 @@
                                                 <segue destination="cSe-lB-LuS" kind="show" id="9z6-tb-gYG"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="info" id="Ibp-E1-ndx"/>
+                                        <barButtonItem key="rightBarButtonItem" title="info" id="Ibp-E1-ndx">
+                                            <connections>
+                                                <action selector="persogensButton:" destination="BYZ-38-t0r" id="346-cw-75L"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -120,6 +124,58 @@
                                     <action selector="previous:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f9d-Sg-V3J"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CKC-rQ-Hsv" customClass="UICollectionView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="142"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zf7-lp-qk3">
+                                        <rect key="frame" x="0.0" y="14" width="375" height="128"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.85395250820000002" green="0.97057462989999999" blue="0.74139083059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yQK-TO-8ka">
+                                            <size key="itemSize" width="86" height="109"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="xc4-OV-hcX" customClass="MinhaCollectionViewCell" customModule="ComicsSolution" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="9.5" width="86" height="109"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                    <rect key="frame" x="0.0" y="0.0" width="86" height="109"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HzC-Ld-77L">
+                                                            <rect key="frame" x="12" y="28" width="62" height="54"/>
+                                                            <animations/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJz-pZ-lqD">
+                                                            <rect key="frame" x="0.0" y="88" width="86" height="21"/>
+                                                            <animations/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <animations/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <animations/>
+                                                <connections>
+                                                    <outlet property="imagemCell" destination="HzC-Ld-77L" id="4k4-q2-V8o"/>
+                                                    <outlet property="personagemCell" destination="bJz-pZ-lqD" id="1ms-6Y-nPS"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="RgT-3e-L7w"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="MXZ-H6-zj4"/>
+                                        </connections>
+                                    </collectionView>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBa-Gu-2qQ">
                                 <rect key="frame" x="263" y="617" width="92" height="30"/>
                                 <animations/>
@@ -143,6 +199,7 @@
                     <connections>
                         <outlet property="comicImage" destination="Gip-rK-yLG" id="Hy9-p5-ZzU"/>
                         <outlet property="scrollView" destination="i7T-ow-jYI" id="JTN-tL-pkv"/>
+                        <outlet property="viewCollection" destination="CKC-rQ-Hsv" id="eTr-2h-wWv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -22,8 +22,9 @@
 		A71C14241BA21EA800EB3BEE /* loadSwipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71C14231BA21EA800EB3BEE /* loadSwipe.swift */; };
 		A74EE8171BA3293D007CFE8B /* dinastia-p2-q1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A74EE8151BA3293D007CFE8B /* dinastia-p2-q1.mp3 */; };
 		A74EE8181BA3293D007CFE8B /* dinastia-p2-q2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A74EE8161BA3293D007CFE8B /* dinastia-p2-q2.mp3 */; };
-		A754A2741BAAF17B0056AD6E /* audio-p2-q2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A754A2731BAAF17B0056AD6E /* audio-p2-q2.mp3 */; settings = {ASSET_TAGS = (); }; };
-		A754A2761BAAF2970056AD6E /* Estranho.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A754A2751BAAF2970056AD6E /* Estranho.mp3 */; settings = {ASSET_TAGS = (); }; };
+		A754A2741BAAF17B0056AD6E /* audio-p2-q2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A754A2731BAAF17B0056AD6E /* audio-p2-q2.mp3 */; };
+		A754A2761BAAF2970056AD6E /* Estranho.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A754A2751BAAF2970056AD6E /* Estranho.mp3 */; };
+		A7795C141BC306E900076AC8 /* MinhaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7795C131BC306E900076AC8 /* MinhaCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		A74EE8161BA3293D007CFE8B /* dinastia-p2-q2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "dinastia-p2-q2.mp3"; sourceTree = "<group>"; };
 		A754A2731BAAF17B0056AD6E /* audio-p2-q2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "audio-p2-q2.mp3"; sourceTree = "<group>"; };
 		A754A2751BAAF2970056AD6E /* Estranho.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Estranho.mp3; sourceTree = "<group>"; };
+		A7795C131BC306E900076AC8 /* MinhaCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinhaCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 			children = (
 				79258C1B1B9F32A000AEBC7C /* ViewController.swift */,
 				7960D0401BA6F54800D3665E /* ChooseComicCollectionViewController.swift */,
+				A7795C131BC306E900076AC8 /* MinhaCollectionViewCell.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				79258C1A1B9F32A000AEBC7C /* AppDelegate.swift in Sources */,
 				79258C221B9F32A000AEBC7C /* ComicsSolution.xcdatamodeld in Sources */,
 				7960D0411BA6F54800D3665E /* ChooseComicCollectionViewController.swift in Sources */,
+				A7795C141BC306E900076AC8 /* MinhaCollectionViewCell.swift in Sources */,
 				79258C4B1BA08A9900AEBC7C /* Sounds.swift in Sources */,
 				A71C14241BA21EA800EB3BEE /* loadSwipe.swift in Sources */,
 				5E1B95A51BA6FAF500E6C055 /* AllComics.swift in Sources */,

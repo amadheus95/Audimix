@@ -9,11 +9,13 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController
+class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate
 {
 
     
-    
+    var imagemCollectionView = ["HOMEN ARANHA3", "flash", "batman","HOMEN ARANHA3", "flash", "batman"]
+    var nomePersonagens = ["homem aranha", "flash", "batman","homem aranha", "flash", "batman"]
+    @IBOutlet weak var viewCollection: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var comicImage: UIImageView!
     var audioPlayer = AVAudioPlayer()
@@ -43,6 +45,7 @@ class ViewController: UIViewController
     {
         super.viewDidLoad()
         swipe.loadSwipe(self.view!,ob: self)
+        viewCollection.hidden = true
         loadTapGesture()
         instaceAllComics = AllComics()
         vetorStrings = instaceAllComics!.vetorComics(index) // Pegar INDEX AQUI!!!!
@@ -59,6 +62,26 @@ class ViewController: UIViewController
         
         self.scrollView.minimumZoomScale = 1.0;
         self.scrollView.maximumZoomScale = 6.0;
+    }
+    
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+    {
+    return imagemCollectionView.count
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell
+    {
+        let cell: MinhaCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! MinhaCollectionViewCell
+        
+        cell.imagemCell.image = UIImage(named: imagemCollectionView[indexPath.row])
+        cell.personagemCell.text = nomePersonagens[indexPath.row]
+        
+        return cell
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        print("cell \(indexPath.row) clicada")
     }
     
     func update(){
@@ -180,7 +203,7 @@ class ViewController: UIViewController
                 
             case UISwipeGestureRecognizerDirection.Up:
                 print("up")
-                
+                viewCollection.hidden = true
                 return
                 
             case UISwipeGestureRecognizerDirection.Down:
@@ -307,5 +330,13 @@ class ViewController: UIViewController
         
         
     }
+    
+    @IBAction func persogensButton(sender: AnyObject) {
+        
+        
+        viewCollection.hidden = false
+    }
+    
+    
 }
 
