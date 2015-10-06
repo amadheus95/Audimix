@@ -116,14 +116,6 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8DA-67-S51">
-                                <rect key="frame" x="20" y="617" width="56" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Anterior"/>
-                                <connections>
-                                    <action selector="previous:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f9d-Sg-V3J"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CKC-rQ-Hsv" customClass="UICollectionView">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="142"/>
                                 <subviews>
@@ -184,6 +176,14 @@
                                     <action selector="next:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UV6-4n-gKb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8DA-67-S51">
+                                <rect key="frame" x="20" y="617" width="56" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Anterior"/>
+                                <connections>
+                                    <action selector="previous:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f9d-Sg-V3J"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -198,6 +198,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="comicImage" destination="Gip-rK-yLG" id="Hy9-p5-ZzU"/>
+                        <outlet property="navigationTitle" destination="ePY-VA-vpP" id="xBv-xG-0rp"/>
                         <outlet property="scrollView" destination="i7T-ow-jYI" id="JTN-tL-pkv"/>
                         <outlet property="viewCollection" destination="CKC-rQ-Hsv" id="eTr-2h-wWv"/>
                     </connections>

@@ -12,6 +12,7 @@ import AVFoundation
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate
 {
 
+    @IBOutlet weak var navigationTitle: UINavigationBar!
     
     var imagemCollectionView = ["HOMEN ARANHA3", "flash", "batman","HOMEN ARANHA3", "flash", "batman"]
     var nomePersonagens = ["homem aranha", "flash", "batman","homem aranha", "flash", "batman"]
@@ -207,6 +208,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             case UISwipeGestureRecognizerDirection.Up:
                 print("up")
                 viewCollection.hidden = true
+                navigationTitle.hidden = false
                 return
                 
             case UISwipeGestureRecognizerDirection.Down:
@@ -336,7 +338,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     @IBAction func persogensButton(sender: AnyObject) {
         
-        
+        navigationTitle.hidden = true
         viewCollection.hidden = false
     }
     
