@@ -128,7 +128,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="142"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zf7-lp-qk3">
-                                        <rect key="frame" x="0.0" y="14" width="375" height="128"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="142"/>
                                         <animations/>
                                         <color key="backgroundColor" red="0.87843137250000003" green="0.66274509800000003" blue="0.1058823529" alpha="0.80291913006756754" colorSpace="custom" customColorSpace="sRGB"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yQK-TO-8ka">
@@ -139,7 +139,7 @@
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="xc4-OV-hcX" customClass="MinhaCollectionViewCell" customModule="ComicsSolution" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="9.5" width="86" height="109"/>
+                                                <rect key="frame" x="0.0" y="16.5" width="86" height="109"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                                     <rect key="frame" x="0.0" y="0.0" width="86" height="109"/>
