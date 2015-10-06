@@ -130,7 +130,7 @@
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zf7-lp-qk3">
                                         <rect key="frame" x="0.0" y="14" width="375" height="128"/>
                                         <animations/>
-                                        <color key="backgroundColor" red="0.85395250820000002" green="0.97057462989999999" blue="0.74139083059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.87843137250000003" green="0.66274509800000003" blue="0.1058823529" alpha="0.80291913006756754" colorSpace="custom" customColorSpace="sRGB"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yQK-TO-8ka">
                                             <size key="itemSize" width="86" height="109"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -145,7 +145,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="86" height="109"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HzC-Ld-77L">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HzC-Ld-77L">
                                                             <rect key="frame" x="12" y="28" width="62" height="54"/>
                                                             <animations/>
                                                         </imageView>
@@ -174,7 +174,7 @@
                                     </collectionView>
                                 </subviews>
                                 <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBa-Gu-2qQ">
                                 <rect key="frame" x="263" y="617" width="92" height="30"/>

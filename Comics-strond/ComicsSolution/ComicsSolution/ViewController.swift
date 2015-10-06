@@ -76,6 +76,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         cell.imagemCell.image = UIImage(named: imagemCollectionView[indexPath.row])
         cell.personagemCell.text = nomePersonagens[indexPath.row]
+        cell.imagemCell.layer.cornerRadius = 30
+        cell.imagemCell.layer.borderWidth = 5
+        cell.imagemCell.layer.borderColor = UIColor.whiteColor().CGColor
         
         return cell
     }
